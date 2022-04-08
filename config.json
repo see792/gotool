@@ -1,0 +1,41 @@
+{
+  "MongoDB": {
+    "Enable": false,
+    "HOST": "127.0.0.1",
+    "USER": "db",
+    "PSWD": "dbpass",
+    "DB": "dbDB",
+    "PORT": 27017
+  },
+  "MySql": {
+    "Enable": true,
+    "HOST": "127.0.0.1",
+    "USER": "db",
+    "PSWD": "dbpass",
+    "DB": "db",
+    "PORT": 3306
+  },
+  "Redis": {
+    "Enable": false,
+    "HOST": "127.0.0.1",
+    "USER": "db",
+    "PSWD": "dbpass",
+    "DB": "dbDB",
+    "PORT": 27017
+  },
+  "WebServer": {
+    "Enable": true,
+    "UseStatic": true,
+    "StaticPath": "static",
+    "Host": "http://0.0.0.0:8567",
+    "PORT": 8567
+  },
+  "WebSocketServer": {
+    "Enable": true,
+    "PORT": 8083
+  },
+  "SocketServer": {
+    "Enable": false,
+    "PORT": 8083
+  }
+}

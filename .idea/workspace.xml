@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1188406b-4b98-47d8-8627-46ee2fd112e2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="C:/Program Files/Go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="27UxOFQ9TFmP8wLb5b9IFjLAj6Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BaseServer-master" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>https://mirrors.aliyun.com/goproxy/</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="872" y="361" key="#Go_Modules_(vgo)" timestamp="1649388443078">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="361" key="#Go_Modules_(vgo)/0.0.2560.1400@0.0.2560.1400" timestamp="1649388443078" />
+    <state width="2517" height="209" key="GridCell.Tab.0.bottom" timestamp="1649388516380">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="209" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1649388516380" />
+    <state width="2517" height="209" key="GridCell.Tab.0.center" timestamp="1649388516380">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="209" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1649388516380" />
+    <state width="2517" height="209" key="GridCell.Tab.0.left" timestamp="1649388516380">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="209" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1649388516380" />
+    <state width="2517" height="209" key="GridCell.Tab.0.right" timestamp="1649388516380">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="209" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1649388516380" />
+  </component>
+</project>
