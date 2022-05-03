@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/PuerkitoBio/goquery v1.8.0
 	github.com/denisenkom/go-mssqldb v0.12.0
-	github.com/ethereum/go-ethereum v1.10.17
+	github.com/ethereum/go-ethereum v1.10.1
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/marspere/goencrypt v1.0.4
 	go.mongodb.org/mongo-driver v1.9.0
