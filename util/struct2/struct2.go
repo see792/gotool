@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"reflect"
 	"strconv"
+	"strings"
 )
 
 func GetStructKeyList(stru interface{})  []string {
@@ -80,10 +81,51 @@ func GetStructValueList(stru interface{})  []string {
 }
 func GetMapToStructBuff(mapS map[string]interface{},stru interface{}) []byte{
 
-	buff ,_:=json.Marshal(mapS)
+
+
+
+	newMaps :=make(map[string]interface{})
+
+	mapRf := reflect.TypeOf(stru)
+
+
+	for m:=0;m<mapRf.NumField();m++ {
+
+
+		field:=mapRf.Field(m)
+
+		filedTag:=field.Tag.Get("json")
+
+		filedName :=field.Name
+
+		k:=filedName
+		v:=InterfaceStrval(mapS[filedName])
+		if len(v)==0 {
+			v = InterfaceStrval(mapS[filedTag])
+			k = filedTag
+		}
+
+
+		switch field.Type.Kind() {
+		case reflect.Float64:
+			newMaps[k] ,_= strconv.ParseFloat(v,64)
+			break;
+		case reflect.Int64:
+			newMaps[k] ,_= strconv.Atoi(v)
+			break;
+		case reflect.Int:
+			newMaps[k] ,_= strconv.Atoi(v)
+			break;
+		default:
+			newMaps[k] =v
+		}
+
+
+
+	}
+	buff ,_:=json.Marshal(newMaps)
 	return buff
 }
-
 
 
 func StructToEndMap(stru interface{}) map[string]interface{} {
