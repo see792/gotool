@@ -81,49 +81,7 @@ func GetStructValueList(stru interface{})  []string {
 }
 func GetMapToStructBuff(mapS map[string]interface{},stru interface{}) []byte{
 
-	mapRf := reflect.TypeOf(stru)
-	newMaps :=make(map[string]interface{})
-
-	for k,_:=range mapS {
-		f ,isHas :=mapRf.FieldByName(k)
-
-		if !isHas {
-			bigM :=strings.ToUpper(k[:1])+k[1:]
-			f ,isHasTag :=mapRf.FieldByName(bigM)
-
-			if isHasTag {
-				switch f.Type.Kind() {
-				case reflect.Float64:
-					newMaps[k] ,_= strconv.ParseFloat(mapS[k].(string),64)
-					break;
-				case reflect.Int64:
-					newMaps[k] ,_= strconv.Atoi(mapS[k].(string))
-					break;
-				case reflect.Int:
-					newMaps[k] ,_= strconv.Atoi(mapS[k].(string))
-					break;
-				default:
-					newMaps[k] =mapS[k]
-				}
-			}
-		}else {
-			switch f.Type.Kind() {
-			case reflect.Float64:
-				newMaps[k] ,_= strconv.ParseFloat(mapS[k].(string),64)
-				break;
-			case reflect.Int64:
-				newMaps[k] ,_= strconv.Atoi(mapS[k].(string))
-				break;
-			case reflect.Int:
-				newMaps[k] ,_= strconv.Atoi(mapS[k].(string))
-				break;
-			default:
-				newMaps[k] =mapS[k]
-			}
-
-		}
-	}
-	buff ,_:=json.Marshal(newMaps)
+	buff ,_:=json.Marshal(mapS)
 	return buff
 }
 
